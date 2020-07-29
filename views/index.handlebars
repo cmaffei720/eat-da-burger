@@ -1,32 +1,40 @@
 <div class="container"> 
-<h1>Burgers</h1>
+<h1>Eat-Da-Burger!</h1>
+<img src="https://www.burger21.com/wp-content/uploads/2020/02/Tex-Mex.jpg" style="width:300px;height:250px;""> 
 
 <div class="row"> 
-  <div class="col-lg-3"> 
+  <div class="col-lg-6"> 
 <h2>Burgers that are not (yet) devoured!</h2>
 
 
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
+    <div class="row"> 
       <a>{{this.id}} - {{this.name}} </a>
       <button class="eatBurger" data-id="{{this.id}}" data-devoured="{{this.devoured}}"> Devour </button>
+      </div>
     {{/unless}}
   {{/each}}
 </ul>
 </div>
-<div class="col-lg-3"> 
+<div class="col-lg-6"> 
 <h2>Burgers that have been devoured!</h2>
 
 <ul>
   {{#each burgers}}
     {{#if devoured}}
+    <div class="row"> 
       <a>{{this.id}} - {{this.name}} </a>
       <button class="deleteBurger" data-id="{{this.id}}" data-devoured="{{this.devoured}}"> Delete </button>
+      </div>
     {{/if}}
   {{/each}}
 </ul>
 </div>
+</div>
+<div class="row"> 
+
 </div>
 <h2>Add a Burger</h2>
 <form class="create-form">
