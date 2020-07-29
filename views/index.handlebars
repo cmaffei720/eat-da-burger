@@ -1,6 +1,10 @@
+<div class="container"> 
 <h1>Burgers</h1>
 
+<div class="row"> 
+  <div class="col-lg-3"> 
 <h2>Burgers that are not (yet) devoured!</h2>
+
 
 <ul>
   {{#each burgers}}
@@ -10,7 +14,8 @@
     {{/unless}}
   {{/each}}
 </ul>
-
+</div>
+<div class="col-lg-3"> 
 <h2>Burgers that have been devoured!</h2>
 
 <ul>
@@ -21,7 +26,8 @@
     {{/if}}
   {{/each}}
 </ul>
-
+</div>
+</div>
 <h2>Add a Burger</h2>
 <form class="create-form">
 
@@ -31,3 +37,4 @@
   </div>
   <button type="submit" id="newBurger">Add Burger</button>
 </form>
+</div>
