@@ -17,6 +17,8 @@ Required the following npm packages inside of the server.js file:
 express
 
 
+
+
 DB Setup
 
 Inside of the burger directory, find a folder named db.
