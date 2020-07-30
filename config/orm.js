@@ -50,7 +50,7 @@ var orm = {
     var queryString = "INSERT INTO " + table;
 
     queryString += " (name) VALUES (";
-    queryString += printQuestionMarks(vals.length);
+    queryString += "?";
     queryString += ") ";
 
     console.log(queryString);

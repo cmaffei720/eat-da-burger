@@ -48,8 +48,7 @@ $(document).ready(function() {
       event.preventDefault();
   
       var newBurger = {
-        name: $("#newBurger").val().trim(),
-        devoured: 0
+        name: $("#newBurger").val().trim()
       };
   
       // Send the POST request.
